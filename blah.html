@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+$=function(q){return[].slice.call(q[0]!='<'?document.querySelectorAll(q):new DOMParser().parseFromString(q,'text/html').body.children)}
+
+function lpad(str, character, length) {
+  var str = '' + str;
+  var prefix_length = length - str.length;
+  for (var i = 0; i < prefix_length; i++) {
+    str = character + str;
+  }
+
+  return str;
+}
+
+function update() {
+  var input  = $('#input')[0];
+  var output = $('#output')[0];
+  var text   = input.value;
+  var images = [];
+
+  for (var i = 0; i < text.length; i++) {
+    if (text[i] == "\n") {
+      images.push($('<br>')[0]);
+    } else {
+      images.push($('<img src="pngs/awoof-' + lpad(text.charCodeAt(i), '0', 3) + '.png">')[0]);
+    }
+  }
+
+  output.innerHTML = '';
+  images.forEach(function (image) { output.appendChild(image); });
+}
+
+function debounce(fn) {
+  var lastCalled = Date.now();
+  return function () {
+    if ((Date.now() - lastCalled) > 100) {
+      fn();
+    }
+
+    lastcalled = Date.now();
+  }
+}
+
+var debounced_update = debounce(update);
+</script>
+<style>
+main {
+  max-width: 1280px; /* 80 columns * 16px */
+  margin: 0 auto;
+}
+#output {
+  border: 1px solid black;
+  height: 384px; /* 24 rows * 16px */
+  overflow: scroll;
+}
+</style>
+</head>
+<body>
+<main>
+<textarea id="input" style="width: 80ch; height: 24em;" onkeyup="debounced_update()"></textarea>
+
+<div id="output"></div>
+</main>
+</body>
+</html>
