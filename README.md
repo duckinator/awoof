@@ -1,6 +1,10 @@
 # awoof
 
-A font for awooOS. And also other things, I guess.
+A monospace font, but I'm furry trash so of course I named it awoof.
+
+If you like awoof, consider supporting me via
+[Liberapay](https://liberapay.com/duckinator/) or
+[PayPal](https://www.paypal.me/duckinator)!
 
 ## Screenshots
 
