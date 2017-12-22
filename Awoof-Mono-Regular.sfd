@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1513646632
-ModificationTime: 1513966580
+ModificationTime: 1513967214
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -59,6 +59,619 @@ OS2CodePages: 00000001.00000000
 OS2UnicodeRanges: 00000003.00000000.00000000.00000000
 MarkAttachClasses: 1
 DEI: 91125
+TtTable: fpgm
+PUSHB_1
+ 0
+FDEF
+PUSHB_1
+ 0
+SZP0
+MPPEM
+PUSHB_1
+ 42
+LT
+IF
+PUSHB_1
+ 74
+SROUND
+EIF
+PUSHB_1
+ 0
+SWAP
+MIAP[rnd]
+RTG
+PUSHB_1
+ 6
+CALL
+IF
+RTDG
+EIF
+MPPEM
+PUSHB_1
+ 42
+LT
+IF
+RDTG
+EIF
+DUP
+MDRP[rp0,rnd,grey]
+PUSHB_1
+ 1
+SZP0
+MDAP[no-rnd]
+RTG
+ENDF
+PUSHB_1
+ 1
+FDEF
+DUP
+MDRP[rp0,min,white]
+PUSHB_1
+ 12
+CALL
+ENDF
+PUSHB_1
+ 2
+FDEF
+MPPEM
+GT
+IF
+RCVT
+SWAP
+EIF
+POP
+ENDF
+PUSHB_1
+ 3
+FDEF
+ROUND[Black]
+RTG
+DUP
+PUSHB_1
+ 64
+LT
+IF
+POP
+PUSHB_1
+ 64
+EIF
+ENDF
+PUSHB_1
+ 4
+FDEF
+PUSHB_1
+ 6
+CALL
+IF
+POP
+SWAP
+POP
+ROFF
+IF
+MDRP[rp0,min,rnd,black]
+ELSE
+MDRP[min,rnd,black]
+EIF
+ELSE
+MPPEM
+GT
+IF
+IF
+MIRP[rp0,min,rnd,black]
+ELSE
+MIRP[min,rnd,black]
+EIF
+ELSE
+SWAP
+POP
+PUSHB_1
+ 5
+CALL
+IF
+PUSHB_1
+ 70
+SROUND
+EIF
+IF
+MDRP[rp0,min,rnd,black]
+ELSE
+MDRP[min,rnd,black]
+EIF
+EIF
+EIF
+RTG
+ENDF
+PUSHB_1
+ 5
+FDEF
+GFV
+NOT
+AND
+ENDF
+PUSHB_1
+ 6
+FDEF
+PUSHB_2
+ 34
+ 1
+GETINFO
+LT
+IF
+PUSHB_1
+ 32
+GETINFO
+NOT
+NOT
+ELSE
+PUSHB_1
+ 0
+EIF
+ENDF
+PUSHB_1
+ 7
+FDEF
+PUSHB_2
+ 36
+ 1
+GETINFO
+LT
+IF
+PUSHB_1
+ 64
+GETINFO
+NOT
+NOT
+ELSE
+PUSHB_1
+ 0
+EIF
+ENDF
+PUSHB_1
+ 8
+FDEF
+SRP2
+SRP1
+DUP
+IP
+MDAP[rnd]
+ENDF
+PUSHB_1
+ 9
+FDEF
+DUP
+RDTG
+PUSHB_1
+ 6
+CALL
+IF
+MDRP[rnd,grey]
+ELSE
+MDRP[min,rnd,black]
+EIF
+DUP
+PUSHB_1
+ 3
+CINDEX
+MD[grid]
+SWAP
+DUP
+PUSHB_1
+ 4
+MINDEX
+MD[orig]
+PUSHB_1
+ 0
+LT
+IF
+ROLL
+NEG
+ROLL
+SUB
+DUP
+PUSHB_1
+ 0
+LT
+IF
+SHPIX
+ELSE
+POP
+POP
+EIF
+ELSE
+ROLL
+ROLL
+SUB
+DUP
+PUSHB_1
+ 0
+GT
+IF
+SHPIX
+ELSE
+POP
+POP
+EIF
+EIF
+RTG
+ENDF
+PUSHB_1
+ 10
+FDEF
+PUSHB_1
+ 6
+CALL
+IF
+POP
+SRP0
+ELSE
+SRP0
+POP
+EIF
+ENDF
+PUSHB_1
+ 11
+FDEF
+DUP
+MDRP[rp0,white]
+PUSHB_1
+ 12
+CALL
+ENDF
+PUSHB_1
+ 12
+FDEF
+DUP
+MDAP[rnd]
+PUSHB_1
+ 7
+CALL
+NOT
+IF
+DUP
+DUP
+GC[orig]
+SWAP
+GC[cur]
+SUB
+ROUND[White]
+DUP
+IF
+DUP
+ABS
+DIV
+SHPIX
+ELSE
+POP
+POP
+EIF
+ELSE
+POP
+EIF
+ENDF
+PUSHB_1
+ 13
+FDEF
+SRP2
+SRP1
+DUP
+DUP
+IP
+MDAP[rnd]
+DUP
+ROLL
+DUP
+GC[orig]
+ROLL
+GC[cur]
+SUB
+SWAP
+ROLL
+DUP
+ROLL
+SWAP
+MD[orig]
+PUSHB_1
+ 0
+LT
+IF
+SWAP
+PUSHB_1
+ 0
+GT
+IF
+PUSHB_1
+ 64
+SHPIX
+ELSE
+POP
+EIF
+ELSE
+SWAP
+PUSHB_1
+ 0
+LT
+IF
+PUSHB_1
+ 64
+NEG
+SHPIX
+ELSE
+POP
+EIF
+EIF
+ENDF
+PUSHB_1
+ 14
+FDEF
+PUSHB_1
+ 6
+CALL
+IF
+RTDG
+MDRP[rp0,rnd,white]
+RTG
+POP
+POP
+ELSE
+DUP
+MDRP[rp0,rnd,white]
+ROLL
+MPPEM
+GT
+IF
+DUP
+ROLL
+SWAP
+MD[grid]
+DUP
+PUSHB_1
+ 0
+NEQ
+IF
+SHPIX
+ELSE
+POP
+POP
+EIF
+ELSE
+POP
+POP
+EIF
+EIF
+ENDF
+PUSHB_1
+ 15
+FDEF
+SWAP
+DUP
+MDRP[rp0,rnd,white]
+DUP
+MDAP[rnd]
+PUSHB_1
+ 7
+CALL
+NOT
+IF
+SWAP
+DUP
+IF
+MPPEM
+GTEQ
+ELSE
+POP
+PUSHB_1
+ 1
+EIF
+IF
+ROLL
+PUSHB_1
+ 4
+MINDEX
+MD[grid]
+SWAP
+ROLL
+SWAP
+DUP
+ROLL
+MD[grid]
+ROLL
+SWAP
+SUB
+SHPIX
+ELSE
+POP
+POP
+POP
+POP
+EIF
+ELSE
+POP
+POP
+POP
+POP
+POP
+EIF
+ENDF
+PUSHB_1
+ 16
+FDEF
+DUP
+MDRP[rp0,min,white]
+PUSHB_1
+ 18
+CALL
+ENDF
+PUSHB_1
+ 17
+FDEF
+DUP
+MDRP[rp0,white]
+PUSHB_1
+ 18
+CALL
+ENDF
+PUSHB_1
+ 18
+FDEF
+DUP
+MDAP[rnd]
+PUSHB_1
+ 7
+CALL
+NOT
+IF
+DUP
+DUP
+GC[orig]
+SWAP
+GC[cur]
+SUB
+ROUND[White]
+ROLL
+DUP
+GC[orig]
+SWAP
+GC[cur]
+SWAP
+SUB
+ROUND[White]
+ADD
+DUP
+IF
+DUP
+ABS
+DIV
+SHPIX
+ELSE
+POP
+POP
+EIF
+ELSE
+POP
+POP
+EIF
+ENDF
+PUSHB_1
+ 19
+FDEF
+DUP
+ROLL
+DUP
+ROLL
+SDPVTL[orthog]
+DUP
+PUSHB_1
+ 3
+CINDEX
+MD[orig]
+ABS
+SWAP
+ROLL
+SPVTL[orthog]
+PUSHB_1
+ 32
+LT
+IF
+ALIGNRP
+ELSE
+MDRP[grey]
+EIF
+ENDF
+PUSHB_1
+ 20
+FDEF
+PUSHB_4
+ 0
+ 64
+ 1
+ 64
+WS
+WS
+SVTCA[x-axis]
+MPPEM
+PUSHW_1
+ 4096
+MUL
+SVTCA[y-axis]
+MPPEM
+PUSHW_1
+ 4096
+MUL
+DUP
+ROLL
+DUP
+ROLL
+NEQ
+IF
+DUP
+ROLL
+DUP
+ROLL
+GT
+IF
+SWAP
+DIV
+DUP
+PUSHB_1
+ 0
+SWAP
+WS
+ELSE
+DIV
+DUP
+PUSHB_1
+ 1
+SWAP
+WS
+EIF
+DUP
+PUSHB_1
+ 64
+GT
+IF
+PUSHB_3
+ 0
+ 32
+ 0
+RS
+MUL
+WS
+PUSHB_3
+ 1
+ 32
+ 1
+RS
+MUL
+WS
+PUSHB_1
+ 32
+MUL
+PUSHB_1
+ 25
+NEG
+JMPR
+POP
+EIF
+ELSE
+POP
+POP
+EIF
+ENDF
+PUSHB_1
+ 21
+FDEF
+PUSHB_1
+ 1
+RS
+MUL
+SWAP
+PUSHB_1
+ 0
+RS
+MUL
+SWAP
+ENDF
+EndTTInstrs
 TtTable: prep
 PUSHW_1
  511
@@ -67,9 +680,15 @@ PUSHB_1
  4
 SCANTYPE
 EndTTInstrs
-ShortTable: cvt  2
+ShortTable: cvt  8
   33
   633
+  18
+  108
+  441
+  639
+  685
+  691
 EndShort
 ShortTable: maxp 16
   1
@@ -80,11 +699,11 @@ ShortTable: maxp 16
   0
   0
   2
-  0
   1
   1
+  22
   0
-  64
+  256
   0
   0
   0
@@ -3468,20 +4087,36 @@ EndChar
 StartChar: i
 Encoding: 105 105 75
 Width: 525
-Flags: W
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
 223 114 m 1,0,-1
- 223 453 l 1,1,-1
- 302 453 l 1,2,-1
- 302 114 l 1,3,-1
+ 161 114 l 1,1,-1
+ 161 149 l 1,2,-1
+ 223 149 l 1,3,-1
+ 223 413 l 1,4,-1
+ 161 413 l 1,5,-1
+ 161 453 l 1,6,-1
+ 223 453 l 1,7,-1
+ 302 453 l 1,8,-1
+ 302 149 l 1,9,-1
+ 364 149 l 1,10,-1
+ 364 114 l 1,11,-1
+ 302 114 l 1,12,-1
  223 114 l 1,0,-1
-223 521 m 1,4,-1
- 223 639 l 1,5,-1
- 302 639 l 1,6,-1
- 302 521 l 1,7,-1
- 223 521 l 1,4,-1
+223 521 m 1,13,-1
+ 223 639 l 1,14,-1
+ 302 639 l 1,15,-1
+ 302 521 l 1,16,-1
+ 223 521 l 1,13,-1
+  Spiro
+    223 521 v
+    223 639 v
+    302 639 v
+    302 521 v
+    0 0 z
+  EndSpiro
 EndSplineSet
 Validated: 1
 EndChar
@@ -3853,33 +4488,32 @@ EndChar
 StartChar: s
 Encoding: 115 115 85
 Width: 525
-Flags: W
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
-137 290 m 1,0,-1
- 103 290 l 1,1,-1
- 103 418 l 1,2,-1
- 137 418 l 1,3,-1
- 137 453 l 1,4,-1
- 422 453 l 1,5,-1
- 422 393 l 1,6,-1
- 163 393 l 1,7,-1
- 163 315 l 1,8,-1
- 386 315 l 1,9,-1
- 386 280 l 1,10,-1
- 422 280 l 1,11,-1
- 422 149 l 1,12,-1
- 386 149 l 1,13,-1
- 386 114 l 1,14,-1
- 103 114 l 1,15,-1
- 103 174 l 1,16,-1
- 362 174 l 1,17,-1
- 362 255 l 1,18,-1
- 137 255 l 1,19,-1
- 137 290 l 1,0,-1
+127 290 m 1,0,-1
+ 93 290 l 1,1,-1
+ 93 418 l 1,2,-1
+ 127 418 l 1,3,-1
+ 127 453 l 1,4,-1
+ 432 453 l 5,5,-1
+ 432 393 l 5,6,-1
+ 153 393 l 1,7,-1
+ 153 315 l 1,8,-1
+ 396 315 l 5,9,-1
+ 396 280 l 5,10,-1
+ 432 280 l 5,11,-1
+ 432 149 l 5,12,-1
+ 396 149 l 5,13,-1
+ 396 114 l 5,14,-1
+ 93 114 l 1,15,-1
+ 93 174 l 1,16,-1
+ 372 174 l 5,17,-1
+ 372 255 l 5,18,-1
+ 127 255 l 1,19,-1
+ 127 290 l 1,0,-1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: t
@@ -3909,6 +4543,7 @@ SplineSet
  94 382 l 1,17,-1
  94 453 l 1,0,-1
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: u
