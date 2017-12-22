@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1513646632
-ModificationTime: 1513967874
+ModificationTime: 1513970920
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -716,7 +716,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 0 38 14
+WinInfo: 38 38 14
 BeginPrivate: 0
 EndPrivate
 BeginChars: 65538 99
@@ -3721,7 +3721,7 @@ EndChar
 StartChar: a
 Encoding: 97 97 67
 Width: 525
-Flags: WO
+Flags: W
 LayerCount: 2
 Fore
 SplineSet
@@ -4043,38 +4043,32 @@ EndChar
 StartChar: i
 Encoding: 105 105 75
 Width: 525
-Flags: W
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
-223 114 m 1,0,-1
- 161 114 l 1,1,-1
- 161 149 l 1,2,-1
- 223 149 l 1,3,-1
- 223 413 l 1,4,-1
- 161 413 l 1,5,-1
- 161 453 l 1,6,-1
- 223 453 l 1,7,-1
- 302 453 l 1,8,-1
- 302 149 l 1,9,-1
- 364 149 l 1,10,-1
- 364 114 l 1,11,-1
- 302 114 l 1,12,-1
- 223 114 l 1,0,-1
-223 521 m 1,13,-1
- 223 639 l 1,14,-1
- 302 639 l 1,15,-1
- 302 521 l 1,16,-1
- 223 521 l 1,13,-1
-  Spiro
-    223 521 v
-    223 639 v
-    302 639 v
-    302 521 v
-    0 0 z
-  EndSpiro
+253 114 m 1,0,-1
+ 128 114 l 1,1,-1
+ 128 184 l 1,2,-1
+ 253 184 l 1,3,-1
+ 253 383 l 5,4,-1
+ 218 383 l 5,5,-1
+ 161 383 l 5,6,-1
+ 161 453 l 1,7,-1
+ 218 453 l 1,8,-1
+ 253 453 l 1,9,-1
+ 323 453 l 1,10,-1
+ 323 184 l 1,11,-1
+ 423 184 l 1,12,-1
+ 423 114 l 1,13,-1
+ 323 114 l 1,14,-1
+ 253 114 l 1,0,-1
+253 521 m 1,15,-1
+ 253 639 l 1,16,-1
+ 323 639 l 1,17,-1
+ 323 521 l 1,18,-1
+ 253 521 l 1,15,-1
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: j
@@ -4193,7 +4187,7 @@ EndChar
 StartChar: l
 Encoding: 108 108 78
 Width: 525
-Flags: W
+Flags: WO
 LayerCount: 2
 Fore
 SplineSet
