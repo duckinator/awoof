@@ -8,9 +8,9 @@ If you like awoof, consider supporting me via
 
 ## Screenshots
 
-![](assets/Screenshot_2017-12-19_09-43-54.png)
+![](assets/Screenshot_2017-12-22_14-30-38.png)
 
-![](assets/Screenshot_2017-12-19_09-47-43.png)
+![](assets/Screenshot_2017-12-22_14-31-26.png)
 
 ## License
 

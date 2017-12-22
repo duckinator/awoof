@@ -1,0 +1,31 @@
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+AbCdEfGhIjKlMnOpQrStUvWxYz
+aBcDeFgHiJkLmNoPqRsTuVwXyZ
+1234567890-=
+!@#$%^&*()_+
+[]\{}|`~,./<>?;:'"
+hello, world!
+HELLO, WORLD!
+HELL0, WORLD!
+"beep boop"
+(foo)
+[bar]
+{baz}
+<asdf>
+
+BUGS: (Is it a bug if it's in a font?)
+
+1. [X] Square brackets are misaligned, e.g. []
+2. [X] "d" is misaligned, and looks way different from a reversed b: e.g., abcdef bdb dbd.
+3. [ ] Some letters, e.g. "i", look farther away from everything else bc they're narrower,
+       but this is a monospace font, so that results in more padding.
+   * Is this worth resolving, or just something I haven't noticed before?
+   * I know some fonts have a serif "i" explicitly to counteract this.
+4. [X] "r" goes lower than other letters. e.g., brba. _b_r_
+   * This actually looks like it may be the case with other letters, too?
+   * Not sure whether to try to find them all, or just fix them as they annoy me lol
+5. [X] @$* could use some cleaning up.
+6. [X] em-dash is not in this font, so it gets pulled from another—apparently not monospace—font instead.
+7. [X] "t" is weirdly short compared to other lowercase letters.
+
