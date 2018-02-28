@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<style>
+#awoo { font-family: awoof; }
+#mono { font-family: monospace; }
+</style>
+
+<p id="awoo">Awoooooog</p>
+<p id="mono">Awoooooog</p>
+
+<script>
+var size = 2;
+var awoo = document.getElementById('awoo');
+var mono = document.getElementById('mono');
+
+function resize(n) {
+  size += n;
+
+  awoo.style.fontSize = size + "em";
+  mono.style.fontSize = (size) + "em";
+}
+
+resize(0);
+</script>
+
+
+<button onclick="resize(-1)">-</button>
+<button onclick="resize(+1)">+</button>
